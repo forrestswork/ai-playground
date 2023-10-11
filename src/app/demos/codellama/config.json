@@ -1,0 +1,14 @@
+{
+  "id": "code-llama",
+  "name": "Code Llama",
+  "title": "Code Llama",
+  "image": "/models/code-llama.png",
+  "category": "Code Generation",
+  "description": "Code Llama is a code-specialized version of Llama 2. It can generate code, and natural language about code, from both code and natural language prompts.",
+  "publisher": "Meta",
+  "version": "latest",
+  "lastModified": "September 12, 2023",
+  "tags": ["Code Generation", "Large Language Model", "Natural Language Prompts", "Text To Code", "Text To Text"]
+}
+
+

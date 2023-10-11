@@ -1,0 +1,14 @@
+{
+  "id": "llama2",
+  "name": "Llama 2",
+  "title": "Llama 2",
+  "image": "/models/llama2.png",
+  "category": "Text Generation",
+  "description": "Llama 2 is a large language AI model capable of generating text and code in response to prompts.",
+  "publisher": "Meta",
+  "version": "latest",
+  "lastModified": "October 9, 2023",
+  "tags": ["Language Generation", "Large Language Model", "Text To Text"]
+}
+
+

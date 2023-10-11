@@ -1,0 +1,12 @@
+{
+  "id": "chatgpt",
+  "name": "ChatGPT",
+  "title": "OpenAI ChatGPT",
+  "image": "/models/chatgpt.png",
+  "category": "Text Generation",
+  "description": "End to end working example",
+  "publisher": "OpenAI",
+  "version": "latest",
+  "lastModified": "October 1, 2023",
+  "tags": ["Language Generation", "Large Language Model", "Text To Text"]
+}

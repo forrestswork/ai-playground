@@ -1,0 +1,12 @@
+{
+  "id": "neva",
+  "name": "NeVa",
+  "title": "NeVA: NeMo Vision and Language Assistant",
+  "image": "/models/neva.png",
+  "category": "Image Conversation",
+  "description": "NeVA is a multi-modal vision-language model that understands text and images and generates informative responses.",
+  "publisher": "Nvidia",
+  "version": "latest",
+  "lastModified": "August 7, 2023",
+  "tags": ["Language Generation", "Large Language Model", "Vision Assistant", "Visual Question Answering", "Object Detection", "NeMo", "Computer Vision"]
+}

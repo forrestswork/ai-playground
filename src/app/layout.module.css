@@ -1,0 +1,12 @@
+.contentBody{
+    min-height: 100vh;
+    padding: 45px 0;
+    display: block;
+    background: #fff;
+    color: #111;
+}
+
+.contentInner{
+    max-width: 1080px;
+    margin: 0 auto;
+}
