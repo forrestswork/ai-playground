@@ -80,7 +80,7 @@ export default function Demo() {
                 </div>
                 <Grid container>
                     <Grid item xs={10}>
-                        <TextField variant="outlined" size="small" value={prompt} onChange={e => setPrompt(e.target.value)}/>
+                        <TextField fullWidth variant="outlined" size="small" value={prompt} onChange={e => setPrompt(e.target.value)}/>
                     </Grid>
                     <Grid item xs={2}>
                         <IconButton onClick={() => submit()}>
