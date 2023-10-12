@@ -5,7 +5,7 @@ import Footer from '@/components/footer';
 import Header from '@/components/header';
 import styles from './layout.module.css';
 import {ReactNode} from 'react';
-import {Demo} from '@/interfaces/demo';
+import {Demo} from '@/lib/interfaces/demo';
 
 const inter = Inter({ subsets: ['latin'] })
 

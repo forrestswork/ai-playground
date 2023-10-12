@@ -1,4 +1,4 @@
-import {get} from '../lib';
+import {get} from '@/src/lib/demo-util';
 
 export async function GET(
     request: Request,

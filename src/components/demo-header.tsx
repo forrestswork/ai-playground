@@ -1,5 +1,5 @@
 import styles from './demo-header.module.css'
-import {Demo} from '@/interfaces/demo';
+import {Demo} from '@/lib/interfaces/demo';
 
 interface Props {
     demo: Demo

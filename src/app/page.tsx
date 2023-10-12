@@ -1,7 +1,7 @@
 import styles from './page.module.css'
 import DemoGrid from '@/components/demo-grid';
 import Layout from '@/components/layout';
-import {Demo} from '@/interfaces/demo';
+import {Demo} from '@/lib/interfaces/demo';
 
 export default async function Home() {
     const demos: Demo[] = await fetch('http://localhost:3000/api/demos').then(r => r.json());

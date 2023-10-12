@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import styles from './demo-wrapper.module.css'
-import {Demo} from '@/interfaces/demo';
+import {Demo} from '@/lib/interfaces/demo';
 import {ReactNode} from 'react';
 import * as React from 'react';
 import {Card, CardActions, CardContent, CardMedia, Chip, Typography} from '@mui/material';

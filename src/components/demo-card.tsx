@@ -1,5 +1,5 @@
 'use client';
-import {Demo} from '@/interfaces/demo';
+import {Demo} from '@/lib/interfaces/demo';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';

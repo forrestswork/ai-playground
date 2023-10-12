@@ -1,4 +1,4 @@
-import {Demo} from '@/interfaces/demo';
+import {Demo} from '@/lib/interfaces/demo';
 import * as React from 'react';
 import {Grid, Skeleton, Stack, Typography} from '@mui/material';
 

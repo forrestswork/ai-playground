@@ -1,6 +1,6 @@
 'use client';
 import * as React from 'react';
-import {Demo} from '@/interfaces/demo';
+import {Demo} from '@/lib/interfaces/demo';
 import InputAdornment from '@mui/material/InputAdornment';
 import TextField from '@mui/material/TextField';
 import SearchIcon from '@mui/icons-material/Search';
