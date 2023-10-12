@@ -1,0 +1,20 @@
+.demoWrapper{
+    display: flex;
+}
+
+.demoDetails{
+    width: 320px;
+    margin-right: 2rem;
+}
+
+.demoForm{
+    flex: 1;
+}
+
+.tags{
+    padding: .75rem;
+}
+
+.tag{
+    margin: .25rem;
+}

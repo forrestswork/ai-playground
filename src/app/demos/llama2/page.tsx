@@ -2,6 +2,9 @@ import styles from './page.module.css'
 import DemoService from '@/services/demo';
 import { Button } from '@mui/base/Button';
 import {Metadata} from 'next';
+import Layout from '@/components/layout';
+import DemoHeader from '@/components/demo-header';
+import DemoWrapper from '@/components/demo-wrapper';
 
 export const metadata: Metadata = {
     title: 'ChatGPT',
@@ -9,11 +12,10 @@ export const metadata: Metadata = {
 }
 
 export default function Demo() {
-  const config = DemoService.get('chatgpt');
-  return (
-    <div>
-        <h1>{config.title}</h1>
-        <Button>Click Me</Button>
-    </div>
-  )
+    const config = DemoService.get('llama2');
+    return (
+        <Layout top={<DemoHeader demo={config} />}>
+            <DemoWrapper demo={config}>Test the children</DemoWrapper>
+        </Layout>
+    )
 }

@@ -1,0 +1,28 @@
+.demoHeader{
+    padding: 2rem 0;
+    box-shadow: 0 0 8px #666;
+    margin-bottom: 2rem;
+}
+
+.demoHeaderInner{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.breadcrumbs{
+    margin-bottom: 1rem;
+    font-size: .8rem;
+}
+
+.breadcrumbs a:last-child{
+    color: #666;
+}
+
+.title{
+
+}
+.divider{
+    display: inline-block;
+    margin: 0 .5rem;
+    color: #ccc;
+}
