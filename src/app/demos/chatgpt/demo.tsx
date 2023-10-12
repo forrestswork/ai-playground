@@ -19,13 +19,10 @@ export default function Demo() {
         }
     ]);
     const pushMessage = (role, content) => {
-        console.log({role, content});
-        console.log('before', {messages});
         setMessages(thread => [
             ...thread,
             {role, content}
         ])
-        console.log('after', {messages});
     }
     const [prompt, setPrompt] = useState('');
 
@@ -62,8 +59,8 @@ export default function Demo() {
     }
 
     return (
-        <Grid container spacing={16}>
-            <Grid item xs={6}>
+        <Grid container spacing={8}>
+            <Grid item xs={5}>
                 <Stack spacing={2}>
                     <Typography variant="h4">Parameters</Typography>
                     <InputSlider value={temperature} min={0} max={1} step={.1} label="Temperature" handleChange={setTemperature} />
@@ -71,7 +68,7 @@ export default function Demo() {
                     <InputSlider value={max_tokens} min={50} max={500} step={1} label="Max tokens" handleChange={setMaxTokens} />
                 </Stack>
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={7}>
                 <div className={styles.chat}>
                     {
                         messages.map((message, index) => (
