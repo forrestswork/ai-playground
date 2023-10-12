@@ -9,7 +9,7 @@ export async function POST(req: Request) {
 
     const chatResponse = await openai.chat.completions.create({
         model: 'gpt-3.5-turbo',
-        messages: [...params.messages]
+        ...params
     })
     return Response.json(chatResponse);
 }
