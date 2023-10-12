@@ -1,11 +1,10 @@
 import styles from './page.module.css'
-import DemoService from '@/services/demo';
 import DemoGrid from '@/components/demo-grid';
 import Layout from '@/components/layout';
 import {Demo} from '@/interfaces/demo';
 
-export default function Home() {
-    const demos: Demo[] = DemoService.list();
+export default async function Home() {
+    const demos: Demo[] = await fetch('http://localhost:3000/api/demos').then(r => r.json());
     return (
         <Layout>
             <div className={styles.content}>
