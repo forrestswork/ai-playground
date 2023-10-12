@@ -6,14 +6,10 @@ import TextField from '@mui/material/TextField';
 import SearchIcon from '@mui/icons-material/Search';
 import {useState} from 'react';
 import styles from '@/components/demo-grid.module.css';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
+import DemoCard from '@/components/demo-card';
+import {Grid} from '@mui/material';
 
-export default function DemoCard({demos}: {demos: Demo[]}) {
+export default function DemoGrid({demos}: {demos: Demo[]}) {
     const [filter, setFilter] = useState('');
     const handleChange = (e) => setFilter(e.target.value);
     const filteredDemos = demos.filter(demo => {
@@ -44,34 +40,15 @@ export default function DemoCard({demos}: {demos: Demo[]}) {
                     variant="outlined"
                 />
             </div>
-            <div className={styles.grid}>
+            <Grid container spacing={2}>
                 {filteredDemos &&
                     filteredDemos.map((demo, index) => (
-                            <div className={styles.gridCell} key={index}>
-                                <Card sx={{ width: 320, height: 360 }}>
-                                    <CardMedia
-                                        sx={{ height: 160, width: 320 }}
-                                        image={demo.image}
-                                        title={demo.title}
-                                    />
-                                    <CardContent>
-                                        <Typography gutterBottom variant="h5" component="div">
-                                            {demo.title}
-                                        </Typography>
-                                        <Typography variant="body2" color="text.secondary">
-                                            {demo.description}
-                                        </Typography>
-                                    </CardContent>
-                                    <CardActions>
-                                        <a href={'/demos/' + demo.id}>
-                                            <Button size="small">Try {demo.name}</Button>
-                                        </a>
-                                    </CardActions>
-                                </Card>
-                            </div>
-                        ))
+                        <Grid item xs={4} key={index}>
+                            <DemoCard demo={demo}></DemoCard>
+                        </Grid>
+                    ))
                 }
-            </div>
+            </Grid>
         </div>
     )
 }
