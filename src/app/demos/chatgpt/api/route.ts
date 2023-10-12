@@ -14,18 +14,3 @@ export async function POST(req: Request) {
     return Response.json(chatResponse);
 }
 
-// exports.chat = (messages, config = {}) => {
-//     const root = new Configuration({
-//         apiKey: config.apiKey
-//     });
-//     delete config.apiKey;
-//     const openai = new OpenAIApi(root);
-//     return openai.createChatCompletion({
-//         model: "gpt-3.5-turbo",
-//         ...config,
-//         messages: [...messages],
-//     }).then((res) => ({
-//         text: res.data.choices[0].message.content,
-//         usage: res.data.usage
-//     }))
-// }
